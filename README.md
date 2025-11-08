@@ -27,6 +27,10 @@ O sistema permite realizar operações de **cadastro**, **listagem**, **atualiza
 
 ---
 
+## 🌐 Acessar no navegador:
+
+[http://localhost:8080](http://localhost:8080)
+
 ## 🐳 Banco de Dados com Docker
 
 Para subir o banco de dados MySQL, utilizamos o Docker. O comando usado foi:
@@ -60,9 +64,31 @@ Rodar a aplicação:
 ```bash
 mvn spring-boot:run
 ```
-🌐 Acessar no navegador:
+### ✅ Usuários para Teste
 
-http://localhost:8080
+#### 👑 Admin  
+- **Permissões:** acesso total a todas as rotas  
+- **Usuário:** `admin`  
+- **Senha:** `1234`
+
+#### 👤 Usuário Comum  
+- **Permissões:** acesso às rotas de **Cliente** e **Intenções**  
+- **Usuário:** `usuario`  
+- **Senha:** `1234`
+
+## ✅ Como rodar os testes
+
+```bash
+mvn test
+```
+
+### ✅ Resultado esperado
+
+Todos os testes devem passar, exibindo algo como:
+
+![Resultado esperado ao rodar os tests](Test_results.png)
+
 
 ## Configuração Inicial no Spring Initializr com dependências.
 ![Spring Initializr com dependências](Motohub_3s.png)
+
