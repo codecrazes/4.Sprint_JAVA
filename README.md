@@ -23,7 +23,8 @@ O sistema permite realizar operações de **cadastro**, **listagem**, **atualiza
 - Thymeleaf  
 - Flyway (migrações de banco de dados)  
 - MySQL 8 (em container Docker)  
-- Maven  
+- Maven
+- Azure
 
 ---
 
@@ -75,6 +76,21 @@ mvn spring-boot:run
 - **Permissões:** acesso às rotas de **Cliente** e **Intenções**  
 - **Usuário:** `usuario`  
 - **Senha:** `1234`
+
+### ✅ Exemplo de testes endpoint
+
+#### Clientes
+
+- **Nome:** `Maria`  
+- **Email:** `maria@email.com`
+- **Telefone:** `11111111111`
+
+#### Motos
+
+- **Modelo:** `Fazer 250`  
+- **Marca:** `Yamaha`
+- **Ano:** `2023`
+- **Tipo de uso:** `ALUGUEL` `VENDA`
 
 ## ✅ Como rodar os testes
 
