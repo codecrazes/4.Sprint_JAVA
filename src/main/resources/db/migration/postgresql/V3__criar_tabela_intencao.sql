@@ -1,5 +1,5 @@
 CREATE TABLE intencao (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    id BIGSERIAL PRIMARY KEY,
     cliente_id BIGINT NOT NULL,
     moto_id BIGINT NOT NULL,
     tipo VARCHAR(20) NOT NULL,
